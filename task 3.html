@@ -19,8 +19,6 @@ body {
     color: #333;
     display: flex;
 }
-
-/* Sidebar */
 .sidebar {
     width: 240px;
     height: 100vh;
@@ -50,8 +48,6 @@ body {
 .sidebar a.active {
     background: #3b82f6;
 }
-
-/* Main Content */
 .main {
     margin-left: 240px;
     width: calc(100% - 240px);
@@ -85,8 +81,6 @@ body {
 .profile p {
     margin: 8px 0;
 }
-
-/* Cards */
 .cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -126,8 +120,6 @@ body {
     margin-bottom: 18px;
     color: #202b46;
 }
-
-/* Tables */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -155,8 +147,6 @@ tr:hover {
     border-radius: 15px;
     font-size: 12px;
 }
-
-/* Attendance Progress */
 .progress {
     width: 100%;
     background: #e5e7eb;
@@ -180,8 +170,6 @@ tr:hover {
     display: flex;
     justify-content: space-between;
 }
-
-/* Announcements */
 .announcement {
     padding: 15px;
     margin-bottom: 12px;
@@ -198,8 +186,6 @@ tr:hover {
 .announcement p {
     color: #555;
 }
-
-/* Responsive */
 @media(max-width: 1000px) {
     .cards {
         grid-template-columns: repeat(2, 1fr);
@@ -252,8 +238,6 @@ tr:hover {
 </head>
 
 <body>
-
-<!-- Sidebar -->
 <div class="sidebar">
     <h2>EduPortal</h2>
     <a href="#dashboard" class="active">🏠 Dashboard</a>
@@ -264,16 +248,12 @@ tr:hover {
     <a href="#exams">📝 Exams</a>
     <a href="#announcements">📢 Notices</a>
 </div>
-
-<!-- Main Dashboard -->
 <div class="main">
 
     <div class="header" id="dashboard">
         <h1>Student Dashboard</h1>
         <p>Academic Year: 2026-27</p>
     </div>
-
-    <!-- Student Details -->
     <div class="profile" id="profile">
         <h2>Student Information</h2>
         <p><b>Name:</b> Aarav Sharma</p>
@@ -283,8 +263,6 @@ tr:hover {
         <p><b>Email:</b> aarav@example.com</p>
         <p><b>Academic Status:</b> Active</p>
     </div>
-
-    <!-- Summary Cards -->
     <div class="cards">
 
         <div class="card">
@@ -308,8 +286,6 @@ tr:hover {
         </div>
 
     </div>
-
-    <!-- Semester Results -->
     <div class="section" id="results">
         <h2>Semester Results</h2>
 
@@ -350,8 +326,6 @@ tr:hover {
             </tr>
         </table>
     </div>
-
-    <!-- Attendance -->
     <div class="section" id="attendance">
         <h2>Attendance Percentage</h2>
 
@@ -397,8 +371,6 @@ tr:hover {
             </div>
         </div>
     </div>
-
-    <!-- Subjects -->
     <div class="section" id="subjects">
         <h2>Subject Information</h2>
 
@@ -453,8 +425,6 @@ tr:hover {
             </tr>
         </table>
     </div>
-
-    <!-- Examination Schedule -->
     <div class="section" id="exams">
         <h2>Examination Schedule</h2>
 
@@ -495,11 +465,6 @@ tr:hover {
             </tr>
         </table>
     </div>
-
-    <!-- Announcements -->
-    <div class="section" id="announcements">
-        <h2>Announcements & Notifications</h2>
-
         <div class="announcement">
             <h3>📢 Examination Notification</h3>
             <p>Semester examinations will begin from November 12, 2026.</p>
